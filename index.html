@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+
+        <title>Aryan Mathew</title>
+        <link rel="stylesheet" type="text/css"href="styles.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        
+        <script src="js/wow.min.js"></script>
+        
+        <script>
+        new WOW().init();
+        </script>
+    </head>
+    <body>
+            
+        <header>
+            
+            <div class= "intro" >
+                <h2 class="name1234">Hey it's...</h2>
+            <h1 class="name123">Aryan Mathew</h1>
+            
+            </div>
+        </header>
+        
+        
+        <div class = "wrapper" onscroll="myFunction()">
+            <section class = "about" id="1">
+                <div class="about-content">
+                    <h3 class="Aryan">Who am I...?</h3>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </div>
+            </section>
+            <!--
+            <h3>my work.</h3>
+            
+            <section class = "work">
+            
+                <div class = "text-box">
+                    <div class = "text-box-content">
+                        <h3>Website</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in rep;lrehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        
+                    </div>
+                </div>
+                
+                <div class = "text-box">
+                    <div class = "text-box-content">
+                        <h3>Website</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        
+                    </div>
+                </div>
+            </section>
+            
+            
+           
+            <section class = "work2">
+            
+                <div class="image-area right">
+                    <img src = "#" alt = "img"/>
+                </div>
+                <div class="image-area left">
+                    <img src="#" alt = "img"/>
+                </div>
+                
+            </section>
+            -->
+            
+        
+        
+        </div>
+        <section class="contact">
+            <div class="contact-content">
+                <h4>Want to get in touch?</h5>
+                <h4><a class = "email" href="mailto:aryanmathew13@gmail.com">aryanmathew13@gmail.com</a></h4>
+            
+            </div>
+        
+        </section>
+        
+        <div class="image-divider">
+        </div>
+        
+        <footer>
+            <div class="footer-content">
+                <p class="credit"> &copy; Copyright 2018 ASM Media.<br>Designed by Aryan Mathew</p>
+            
+                <ul class="social">
+                    <li><a href = "#" target="_blank">Instagram</a></li>
+                    <li><a href = "#" target="_blank">Twitter</a></li>
+                    <li><a href = "#" target="_blank">Snap</a></li>
+                
+                </ul>
+            </div>
+        </footer>
+
+        <script>
+if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+            
+        </script>
+        <script>
+function myFunction() {
+    document.getElementById("name1234").style.color = "red";
+}
+</script>
+        
+    </body>
+    
+</html>
+
+        
